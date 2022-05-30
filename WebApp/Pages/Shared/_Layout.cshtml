@@ -23,7 +23,7 @@
                         <a class="nav-link text-dark" asp-area="" asp-page="/Index">Avaleht</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-page="/addEvent" >Ürituse lisamine</a>
+                        <a class="nav-link text-dark" asp-area="" asp-page="/addEvent">Ürituse lisamine</a>
                     </li>
                 </ul>
             </div>
@@ -41,12 +41,13 @@
     </main>
 </div>
 
-<footer class="border-top footer text-muted">
-    <div class="container bg-dark bg-opacity-75 text-light">
-        <p>Kontakt: <br/>
-                Peakontor Tallinnas <br/>
-                Suur-Ameerika 1
-            </p>
+<footer class="footer align-bottom">
+    <div class="bg-dark text-light">
+        <p>
+            Kontakt:
+            Peakontor Tallinnas
+            Suur-Ameerika 1
+        </p>
     </div>
 </footer>
 
@@ -54,6 +55,6 @@
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
 
-@await RenderSectionAsync("Scripts", required: false)
+@await RenderSectionAsync("Scripts", false)
 </body>
 </html>

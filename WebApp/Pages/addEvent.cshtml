@@ -4,16 +4,31 @@
     ViewData["Title"] = "Lisa üritus";
 }
 
-<div> 
-<form method="post" xmlns="http://www.w3.org/1999/html">
-    Ürituse nimi: <input type="text" name="eventName" value=""/><br>
-    
-    Toimumisaeg: <input type="datetime-local" name="eventTime" value=""><br>
-    
-    Koht: <input type="text" name="eventVenue" value=""><br>
-    
-    Lisainfo: <input type="text" name="info" value="">
-    
-    <input type="submit" value="Submit" class="submit">
-</form>
+<div class="container">
+    <div class="row justify-content-center">
+    <div class="col-lg-5">
+        <form method="post">
+            <label for="eventName" class="col-3 gy-3"> Ürituse nimi:</label>
+            <input type="text" id="eventName" name="eventName" value="" class="col-5 gy-3"/><br>
+
+            <label for="eventTime" class="col-3 gy-3"> Toimumisaeg:</label>
+            <input type="datetime-local" id="eventTime" name="eventTime" value="" class="col-5 gy-3"><br>
+
+            <label for="eventVenue" class="col-3 gy-3"> Koht: </label>
+            <input type="text" id="eventVenue" name="eventVenue" value="" class="col-5 gy-3"><br>
+
+            <label for="info" class="col-3 gy-3"> Lisainfo: </label>
+            <input type="text" id="info" name="info" value="" class="col-5 gy-3">
+            
+            <div class="row">
+                <div class="col-2 gy-4 gx-4">
+                    <input type="submit" value="Lisa" class="submit">
+                </div>
+                <div class="col-3 gy-4 gx-4">
+                    <input type="submit" value="Tagasi" class="back">
+                </div>
+            </div>
+        </form>
+        </div>
+    </div>
 </div>

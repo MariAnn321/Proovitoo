@@ -1,0 +1,24 @@
+﻿@page
+@model AddParticipant
+
+@{
+    ViewData["Title"] = "Lisa osaleja";
+}
+
+<div class="container">
+    <form method="post">
+        <div class="row justify-content-center">
+            <div class="col-4">
+            Nimi: <input class="row" type="text"/>
+            Perekonnanimi: <input class="row" type="text"/>
+            Isikukood: <input class="row" type="text" maxlength="11"/>
+            Osavõtumaksu maksmise viis:
+            <select class="row">
+                <option>Sularaha</option>
+                <option>Pangaülekanne</option>
+            </select>
+            Lisainfo: <input class="row" type="text" maxlength="1500"/>
+            </div>
+        </div>
+        </form>
+</div>

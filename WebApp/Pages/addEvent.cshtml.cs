@@ -11,7 +11,7 @@ public class AddEventCshtml : PageModel
         _logger = logger;
     }
 
-    public void OnGet()
+    public void OnPost()
     {
     }
 }

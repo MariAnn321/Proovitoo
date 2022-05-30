@@ -4,7 +4,7 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="container mt-5">
+<div class="container mt-5 my-4">
     <div class="row">
         <div class="col-sm-6 p-lg-5 fw-semibold text-light bg-primary">
             <p class="mt-4">Cat ipsum dolor sit amet, suscipit and quia. Adipisicing suscipit dicta. Totam ipsa elit and quaerat but illum for lorem aliquip. Aliqua quis, ea or ipsum. Consequat error. Beatae incididunt fugiat aliquid and lorem so molestiae. Ab nemo enim.</p>
@@ -17,11 +17,13 @@
     <div class="row">
         <div class="col-sm-6 gy-5 gx-3 text-center bg-primary text-light">
             <h3>Tulevased üritused</h3>
+            <p class="bg-light">
+                <a class="link-light text-black px-5" asp-page="Participants">Kassi sünnipäev</a>
+                <a class="link-light text-black align-items-end" asp-page="AddParticipant">Lisa osaleja</a>
+            </p>
         </div>
-
-        <div class="col-sm-6 gy-5 gx-3 text-center bg-primary text-light">
+        <div class="col-sm-5 gy-5 gx-3 text-center bg-primary text-light">
             <h3>Toimunud üritused</h3>
-
         </div>
     </div>
 </div>
